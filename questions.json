@@ -1,0 +1,842 @@
+[
+    {
+        "question": "What is the primary function of the ALU (Arithmetic Logic Unit)?",
+        "options": [
+            "A) Control data flow",
+            "B) Perform arithmetic and logic operations",
+            "C) Store data",
+            "D) Manage memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a functional unit of a computer?",
+        "options": [
+            "A) Control Unit",
+            "B) ALU",
+            "C) Cache",
+            "D) Printer"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What does the term 'stored program concept' refer to?",
+        "options": [
+            "A) Programs are stored on external devices",
+            "B) Programs are stored in memory and executed from there",
+            "C) Programs are hardcoded into hardware",
+            "D) Programs are executed in a sequential manner only"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "In binary representation, what is the decimal equivalent of the binary number 1010?",
+        "options": [
+            "A) 8",
+            "B) 10",
+            "C) 12",
+            "D) 14"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which addressing mode uses a register to hold the address of the operand?",
+        "options": [
+            "A) Immediate Addressing",
+            "B) Direct Addressing",
+            "C) Indirect Addressing",
+            "D) Register Addressing"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the purpose of instruction sequencing?",
+        "options": [
+            "A) To execute instructions in a random order",
+            "B) To determine the order of instruction execution",
+            "C) To store instructions in memory",
+            "D) To decode instructions"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a type of memory operation?",
+        "options": [
+            "A) Fetch",
+            "B) Decode",
+            "C) Execute",
+            "D) All of the above"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the maximum value that can be represented with 4 bits?",
+        "options": [
+            "A) 15",
+            "B) 16",
+            "C) 14",
+            "D) 8"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is NOT a type of instruction?",
+        "options": [
+            "A) Data Transfer",
+            "B) Arithmetic",
+            "C) Control",
+            "D) Storage"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the primary purpose of memory addresses?",
+        "options": [
+            "A) To identify the type of data",
+            "B) To locate data in memory",
+            "C) To execute instructions",
+            "D) To store programs"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is an assembly language?",
+        "options": [
+            "A) A high-level programming language",
+            "B) A low-level programming language that is closely related to machine code",
+            "C) A markup language",
+            "D) A scripting language"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of a stack in computer architecture?",
+        "options": [
+            "A) To store data permanently",
+            "B) To manage function calls and local variables",
+            "C) To hold the operating system",
+            "D) To execute instructions"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a characteristic of subroutines?",
+        "options": [
+            "A) They cannot be reused",
+            "B) They are always executed in a loop",
+            "C) They can be called multiple times",
+            "D) They do not return values"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is an interrupt?",
+        "options": [
+            "A) A signal to the processor to stop executing",
+            "B) A method to increase processing speed",
+            "C) A way to manage memory",
+            "D) A type of data transfer"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is NOT a type of I/O device?",
+        "options": [
+            "A) Keyboard",
+            "B) Monitor",
+            "C) RAM",
+            "D) Printer"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the function of bus arbitration?",
+        "options": [
+            "A) To manage memory access",
+            "B) To control data flow between devices",
+            "C) To resolve conflicts when multiple devices request the bus",
+            "D) To execute instructions"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following is a common bus structure?",
+        "options": [
+            "A) Data bus",
+            "B) Address bus",
+            "C) Control bus",
+            "D) All of the above"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What does DMA stand for?",
+        "options": [
+            "A) Direct Memory Access",
+            "B) Dynamic Memory Allocation",
+            "C) Data Management Architecture",
+            "D) Direct Memory Allocation"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is a feature of read-only memory (ROM)?",
+        "options": [
+            "A) It can be easily modified",
+            "B) It retains data even when powered off",
+            "C) It is faster than RAM",
+            "D) It is volatile"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary purpose of cache memory?",
+        "options": [
+            "A) To store large amounts of data permanently",
+            "B) To speed up data access for the CPU",
+            "C) To manage input/output operations",
+            "D) To execute instructions"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the main characteristic of semiconductor RAM?",
+        "options": [
+            "A) It is non-volatile",
+            "B) It is volatile and loses data when power is off",
+            "C) It is slower than ROM",
+            "D) It is used for permanent storage"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a type of cache mapping function?",
+        "options": [
+            "A) Direct mapping",
+            "B) Associative mapping",
+            "C) Set-associative mapping",
+            "D) All of the above"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What does the term 'memory hierarchy' refer to?",
+        "options": [
+            "A) The organization of different types of memory in a system",
+            "B) The order of execution of instructions",
+            "C) The structure of the CPU",
+            "D) The arrangement of I/O devices"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which type of memory is typically the fastest?",
+        "options": [
+            "A) Hard Disk",
+            "B) RAM",
+            "C) Cache",
+            "D) ROM"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of direct memory access (DMA)?",
+        "options": [
+            "A) To allow the CPU to access memory directly",
+            "B) To enable peripherals to access memory without CPU intervention",
+            "C) To increase the speed of the CPU",
+            "D) To manage memory allocation"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a characteristic of volatile memory?",
+        "options": [
+            "A) It retains data without power",
+            "B) It loses data when power is lost",
+            "C) It is used for permanent storage",
+            "D) It is slower than non-volatile memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary function of a memory controller?",
+        "options": [
+            "A) To execute instructions",
+            "B) To manage data flow between the CPU and memory",
+            "C) To store data",
+            "D) To perform arithmetic operations"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is an example of a non-volatile memory?",
+        "options": [
+            "A) RAM",
+            "B) Cache",
+            "C) Flash memory",
+            "D) Registers"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the main advantage of using cache memory?",
+        "options": [
+            "A) It is cheaper than RAM",
+            "B) It increases the speed of data access for the CPU",
+            "C) It can store more data than RAM",
+            "D) It is non-volatile"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following best describes the function of a memory address?",
+        "options": [
+            "A) It indicates the type of data stored",
+            "B) It specifies the location of data in memory",
+            "C) It determines the speed of data access",
+            "D) It is used for data transfer"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary role of the control unit in a CPU?",
+        "options": [
+            "A) To perform arithmetic calculations",
+            "B) To manage the execution of instructions",
+            "C) To store data",
+            "D) To handle input/output operations"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a characteristic of a stack?",
+        "options": [
+            "A) It follows a FIFO (First In First Out) order",
+            "B) It follows a LIFO (Last In First Out) order",
+            "C) It can only store integers",
+            "D) It is a type of non-volatile memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of an instruction set architecture (ISA)?",
+        "options": [
+            "A) To define the hardware components of a computer",
+            "B) To specify the set of instructions that a CPU can execute",
+            "C) To manage memory allocation",
+            "D) To control input/output devices"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is an example of an addressing mode?",
+        "options": [
+            "A) Immediate",
+            "B) Direct",
+            "C) Indirect",
+            "D) All of the above"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the function of a bus in computer architecture?",
+        "options": [
+            "A) To store data",
+            "B) To transfer data between components",
+            "C) To execute instructions",
+            "D) To manage memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which type of memory is typically used for temporary storage during processing?",
+        "options": [
+            "A) ROM",
+            "B) Hard Disk",
+            "C) RAM",
+            "D) Flash Memory"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What does the term 'fetch-execute cycle' refer to?",
+        "options": [
+            "A) The process of storing data in memory",
+            "B) The sequence of fetching an instruction and executing it",
+            "C) The method of transferring data to I/O devices",
+            "D) The way data is organized in memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a type of read-only memory?",
+        "options": [
+            "A) SRAM",
+            "B) DRAM",
+            "C) PROM",
+            "D) RAM"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the main purpose of using interrupts in a computer system?",
+        "options": [
+            "A) To increase processing speed",
+            "B) To allow the CPU to respond to events in real-time",
+            "C) To manage memory allocation",
+            "D) To execute instructions faster"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following best describes a subroutine?",
+        "options": [
+            "A) A sequence of instructions that can be executed independently",
+            "B) A type of data structure",
+            "C) A method for managing memory",
+            "D) A way to store data permanently"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the primary function of the data bus?",
+        "options": [
+            "A) To carry addresses",
+            "B) To carry control signals",
+            "C) To carry data between components",
+            "D) To store data"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following is a characteristic of cache memory?",
+        "options": [
+            "A) It is slower than RAM",
+            "B) It is used for permanent storage",
+            "C) It is faster than main memory",
+            "D) It is volatile"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the purpose of the address bus?",
+        "options": [
+            "A) To carry data",
+            "B) To carry control signals",
+            "C) To specify memory locations",
+            "D) To execute instructions"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "Which of the following is a common type of I/O operation?",
+        "options": [
+            "A) Read",
+            "B) Write",
+            "C) Execute",
+            "D) Both A and B"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the main advantage of using direct memory access (DMA)?",
+        "options": [
+            "A) It reduces CPU workload",
+            "B) It increases memory speed",
+            "C) It allows for more data storage",
+            "D) It is easier to implement"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is a type of volatile memory?",
+        "options": [
+            "A) ROM",
+            "B) Flash Memory",
+            "C) SRAM",
+            "D) Hard Disk"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the primary function of the control bus?",
+        "options": [
+            "A) To carry data",
+            "B) To carry control signals between components",
+            "C) To store data",
+            "D) To execute instructions"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following best describes the function of a memory address?",
+        "options": [
+            "A) It indicates the type of data stored",
+            "B) It specifies the location of data in memory",
+            "C) It determines the speed of data access",
+            "D) It is used for data transfer"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the main purpose of using a stack in programming?",
+        "options": [
+            "A) To store global variables",
+            "B) To manage function calls and local variables",
+            "C) To execute instructions",
+            "D) To store data permanently"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a characteristic of RAM?",
+        "options": [
+            "A) It is volatile",
+            "B) It is used for temporary storage",
+            "C) It retains data without power",
+            "D) It is faster than hard disk storage"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the primary role of the CPU?",
+        "options": [
+            "A) To store data",
+            "B) To execute instructions",
+            "C) To manage input/output operations",
+            "D) To provide power to the system"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a type of non-volatile memory?",
+        "options": [
+            "A) RAM",
+            "B) Cache",
+            "C) ROM",
+            "D) All of the above"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What does the term 'bus width' refer to?",
+        "options": [
+            "A) The number of bits that can be transmitted simultaneously",
+            "B) The speed of data transfer",
+            "C) The amount of data stored in memory",
+            "D) The number of devices connected to the bus"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is a function of the ALU?",
+        "options": [
+            "A) Control data flow",
+            "B) Perform arithmetic and logic operations",
+            "C) Store data",
+            "D) Manage memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of a memory cache?",
+        "options": [
+            "A) To store data permanently",
+            "B) To speed up data access for the CPU",
+            "C) To manage input/output operations",
+            "D) To execute instructions"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a characteristic of direct mapping in cache memory?",
+        "options": [
+            "A) Each block of main memory maps to one cache line",
+            "B) Each cache line can store multiple blocks",
+            "C) It is the most complex mapping technique",
+            "D) It requires more hardware than other methods"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the main disadvantage of using RAM?",
+        "options": [
+            "A) It is volatile",
+            "B) It is slow",
+            "C) It is expensive",
+            "D) It cannot store data"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is a common type of instruction in assembly language?",
+        "options": [
+            "A) Data Transfer",
+            "B) Arithmetic",
+            "C) Control",
+            "D) All of the above"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the purpose of an instruction decoder?",
+        "options": [
+            "A) To execute instructions",
+            "B) To convert machine code into a format that can be executed",
+            "C) To store instructions",
+            "D) To manage memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a type of cache mapping?",
+        "options": [
+            "A) Direct mapping",
+            "B) Associative mapping",
+            "C) Set-associative mapping",
+            "D) Random mapping"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the primary function of a hard disk drive?",
+        "options": [
+            "A) To execute instructions",
+            "B) To store data permanently",
+            "C) To manage memory",
+            "D) To perform arithmetic operations"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following best describes a subroutine?",
+        "options": [
+            "A) A sequence of instructions that can be executed independently",
+            "B) A type of data structure",
+            "C) A method for managing memory",
+            "D) A way to store data permanently"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the main purpose of using interrupts in a computer system?",
+        "options": [
+            "A) To increase processing speed",
+            "B) To allow the CPU to respond to events in real-time",
+            "C) To manage memory allocation",
+            "D) To execute instructions faster"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a characteristic of a stack?",
+        "options": [
+            "A) It follows a FIFO (First In First Out) order",
+            "B) It follows a LIFO (Last In First Out) order",
+            "C) It can only store integers",
+            "D) It is a type of non-volatile memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the primary role of the control unit in a CPU?",
+        "options": [
+            "A) To perform arithmetic calculations",
+            "B) To manage the execution of instructions",
+            "C) To store data",
+            "D) To handle input/output operations"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a type of read-only memory?",
+        "options": [
+            "A) SRAM",
+            "B) DRAM",
+            "C) PROM",
+            "D) RAM"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the main advantage of using direct memory access (DMA)?",
+        "options": [
+            "A) It reduces CPU workload",
+            "B) It increases memory speed",
+            "C) It allows for more data storage",
+            "D) It is easier to implement"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is a type of volatile memory?",
+        "options": [
+            "A) ROM",
+            "B) Flash Memory",
+            "C) SRAM",
+            "D) Hard Disk"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the primary function of the control bus?",
+        "options": [
+            "A) To carry data",
+            "B) To carry control signals between components",
+            "C) To store data",
+            "D) To execute instructions"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following best describes the function of a memory address?",
+        "options": [
+            "A) It indicates the type of data stored",
+            "B) It specifies the location of data in memory",
+            "C) It determines the speed of data access",
+            "D) It is used for data transfer"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the main purpose of using a stack in programming?",
+        "options": [
+            "A) To store global variables",
+            "B) To manage function calls and local variables",
+            "C) To execute instructions",
+            "D) To store data permanently"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a characteristic of RAM?",
+        "options": [
+            "A) It is volatile",
+            "B) It is used for temporary storage",
+            "C) It retains data without power",
+            "D) It is faster than hard disk storage"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What is the primary role of the CPU?",
+        "options": [
+            "A) To store data",
+            "B) To execute instructions",
+            "C) To manage input/output operations",
+            "D) To provide power to the system"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a type of non-volatile memory?",
+        "options": [
+            "A) RAM",
+            "B) Cache",
+            "C) ROM",
+            "D) All of the above"
+        ],
+        "answer": "C"
+    },
+    {
+        "question": "What does the term 'bus width' refer to?",
+        "options": [
+            "A) The number of bits that can be transmitted simultaneously",
+            "B) The speed of data transfer",
+            "C) The amount of data stored in memory",
+            "D) The number of devices connected to the bus"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is a function of the ALU?",
+        "options": [
+            "A) Control data flow",
+            "B) Perform arithmetic and logic operations",
+            "C) Store data",
+            "D) Manage memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "What is the purpose of a memory cache?",
+        "options": [
+            "A) To store data permanently",
+            "B) To speed up data access for the CPU",
+            "C) To manage input/output operations",
+            "D) To execute instructions"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is a characteristic of direct mapping in cache memory?",
+        "options": [
+            "A) Each block of main memory maps to one cache line",
+            "B) Each cache line can store multiple blocks",
+            "C) It is the most complex mapping technique",
+            "D) It requires more hardware than other methods"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "What is the main disadvantage of using RAM?",
+        "options": [
+            "A) It is volatile",
+            "B) It is slow",
+            "C) It is expensive",
+            "D) It cannot store data"
+        ],
+        "answer": "A"
+    },
+    {
+        "question": "Which of the following is a common type of instruction in assembly language?",
+        "options": [
+            "A) Data Transfer",
+            "B) Arithmetic",
+            "C) Control",
+            "D) All of the above"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the purpose of an instruction decoder?",
+        "options": [
+            "A) To execute instructions",
+            "B) To convert machine code into a format that can be executed",
+            "C) To store instructions",
+            "D) To manage memory"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following is NOT a type of cache mapping?",
+        "options": [
+            "A) Direct mapping",
+            "B) Associative mapping",
+            "C) Set-associative mapping",
+            "D) Random mapping"
+        ],
+        "answer": "D"
+    },
+    {
+        "question": "What is the primary function of a hard disk drive?",
+        "options": [
+            "A) To execute instructions",
+            "B) To store data permanently",
+            "C) To manage memory",
+            "D) To perform arithmetic operations"
+        ],
+        "answer": "B"
+    },
+    {
+        "question": "Which of the following best describes a subroutine?",
+        "options": [
+            "A) A sequence of instructions that can be executed independently",
+            "B) A type of data structure",
+            "C) A method for managing memory",
+            "D) A way to store data permanently"
+        ],
+        "answer": "A"
+    }
+]

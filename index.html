@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Learning: Computer Architecture Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --github-dark: #0d1117;
+            --github-darker: #010409;
+            --github-border: #30363d;
+            --github-text: #c9d1d9;
+            --github-link: #58a6ff;
+            --github-success: #238636;
+            --github-error: #f85149;
+            --github-highlight: #1f6feb;
+            --neon-glow: 0 0 10px rgba(88, 166, 255, 0.5);
+            --gradient-glow: linear-gradient(45deg, #58a6ff, #88ff58);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @keyframes backgroundPulse {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes floatAnimation {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes glowPulse {
+            0% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.2); }
+            50% { box-shadow: 0 0 20px rgba(88, 166, 255, 0.6); }
+            100% { box-shadow: 0 0 5px rgba(88, 166, 255, 0.2); }
+        }
+
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: var(--github-darker);
+            color: var(--github-text);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            background: linear-gradient(
+                135deg,
+                var(--github-darker) 0%,
+                var(--github-dark) 100%
+            );
+            background-size: 400% 400%;
+            animation: backgroundPulse 15s ease infinite;
+        }
+
+        .quantum-container {
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(13, 17, 23, 0.8);
+            border: 1px solid var(--github-border);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: var(--neon-glow);
+            animation: floatAnimation 6s ease-in-out infinite;
+        }
+
+        .quantum-header {
+            text-align: center;
+            padding: 30px;
+            border-bottom: 1px solid var(--github-border);
+            margin-bottom: 30px;
+        }
+
+        .quantum-header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.8rem;
+            background: var(--gradient-glow);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            animation: glowPulse 3s infinite;
+        }
+
+        .quantum-quiz-container {
+            background: rgba(13, 17, 23, 0.9);
+            border: 1px solid var(--github-border);
+            border-radius: 12px;
+            padding: 30px;
+            margin-top: 20px;
+        }
+
+        .quantum-question {
+            background: rgba(22, 27, 34, 0.8);
+            border: 1px solid var(--github-border);
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .quantum-question:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--neon-glow);
+        }
+
+        .quantum-option {
+            background: rgba(22, 27, 34, 0.8);
+            border: 1px solid var(--github-border);
+            padding: 15px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .quantum-option:hover {
+            background: rgba(31, 111, 235, 0.2);
+            border-color: var(--github-highlight);
+            transform: translateX(5px);
+        }
+
+        .quantum-option::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(88, 166, 255, 0.1),
+                transparent
+            );
+            transition: 0.5s;
+        }
+
+        .quantum-option:hover::before {
+            left: 100%;
+        }
+
+        .quantum-option.correct {
+            background: rgba(35, 134, 54, 0.2);
+            border-color: var(--github-success);
+        }
+
+        .quantum-option.incorrect {
+            background: rgba(248, 81, 73, 0.2);
+            border-color: var(--github-error);
+        }
+
+        .quantum-btn {
+            background: var(--github-highlight);
+            color: #fff;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .quantum-btn:hover {
+            background: #388bfd;
+            transform: translateY(-2px);
+            box-shadow: var(--neon-glow);
+        }
+
+        .progress-bar {
+            height: 6px;
+            background: rgba(48, 54, 61, 0.6);
+            border-radius: 3px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--github-highlight);
+            position: relative;
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-bar-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            animation: progressGlow 2s linear infinite;
+        }
+
+        @keyframes progressGlow {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .quantum-result {
+            font-family: 'Orbitron', sans-serif;
+            color: var(--github-link);
+            text-shadow: var(--neon-glow);
+            animation: glowPulse 2s infinite;
+        }
+
+        @media (max-width: 768px) {
+            .quantum-container {
+                padding: 15px;
+            }
+
+            .quantum-header h1 {
+                font-size: 2rem;
+            }
+
+            .quantum-btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+
+            .quantum-question {
+                padding: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .quantum-header h1 {
+                font-size: 1.5rem;
+            }
+
+            .quantum-option {
+                padding: 12px 15px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="quantum-container">
+        <header class="quantum-header">
+            <h1>Quantum Learning Hub</h1>
+            <p>Computer Architecture Neural Assessment</p>
+        </header>
+
+        <div class="quantum-quiz-container">
+            <div id="question-container"></div>
+            
+            <div class="quantum-nav">
+                <button id="prev-btn" class="quantum-btn">Previous</button>
+                <button id="next-btn" class="quantum-btn">Next</button>
+            </div>
+
+            <div id="result-container" class="quantum-result"></div>
+            <div id="score-container" class="score-display">
+                <div class="progress-bar">
+                    <div id="progress-bar-fill" class="progress-bar-fill" style="width: 0%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Fetch questions from JSON file
+        async function fetchQuestions() {
+            try {
+                const response = await fetch('questions.json');
+                const questions = await response.json();
+                return questions.map(q => ({
+                    question: q.question,
+                    options: q.options.map(opt => opt.substring(3)), // Remove A), B), etc.
+                    correct: q.answer.charCodeAt(0) - 65 // Convert A,B,C,D to 0,1,2,3
+                }));
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                return [];
+            }
+        }
+
+        // Initialize quiz after loading questions
+        async function initializeQuiz() {
+            const questions = await fetchQuestions();
+            if (questions.length > 0) {
+                new QuantumQuizEngine(questions);
+            } else {
+                document.getElementById('question-container').innerHTML = 
+                    '<p>Error loading questions. Please try again later.</p>';
+            }
+        }
+
+        // Start the quiz when page loads
+        window.addEventListener('load', initializeQuiz);
+
+        class QuantumQuizEngine {
+            constructor(questions) {
+                this.questions = this.shuffleQuestions(questions);
+                this.currentQuestionIndex = 0;
+                this.score = 0;
+                this.selectedAnswers = new Array(questions.length).fill(null);
+
+                this.initializeDOM();
+                this.loadQuestion();
+                this.updateProgressBar();
+                this.initializeKeyboardControls();
+            }
+
+            shuffleQuestions(questions) {
+                return questions.sort(() => Math.random() - 0.5);
+            }
+
+            initializeDOM() {
+                this.questionContainer = document.getElementById('question-container');
+                this.prevBtn = document.getElementById('prev-btn');
+                this.nextBtn = document.getElementById('next-btn');
+                this.resultContainer = document.getElementById('result-container');
+                this.progressBarFill = document.getElementById('progress-bar-fill');
+
+                this.prevBtn.addEventListener('click', () => this.navigateQuestion(-1));
+                this.nextBtn.addEventListener('click', () => this.navigateQuestion(1));
+            }
+
+            initializeKeyboardControls() {
+                document.addEventListener('keydown', (e) => {
+                    switch(e.key) {
+                        case 'ArrowRight':
+                            this.navigateQuestion(1);
+                            break;
+                        case 'ArrowLeft':
+                            this.navigateQuestion(-1);
+                            break;
+                        case '1':
+                        case '2':
+                        case '3':
+                        case '4':
+                            const index = parseInt(e.key) - 1;
+                            const options = document.querySelectorAll('.quantum-option');
+                            if (options[index]) {
+                                this.selectOption(options[index], this.questions[this.currentQuestionIndex]);
+                            }
+                            break;
+                    }
+                });
+            }
+
+            loadQuestion() {
+                const question = this.questions[this.currentQuestionIndex];
+                this.questionContainer.innerHTML = `
+                    <div class="quantum-question">
+                        <h2>Question ${this.currentQuestionIndex + 1}</h2>
+                        <p>${question.question}</p>
+                        <div class="quantum-options">
+                            ${question.options.map((option, i) => `
+                                <div class="quantum-option" data-index="${i}">
+                                    ${i + 1}. ${option}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+
+                // Check if this question was previously answered
+                const previousAnswer = this.selectedAnswers[this.currentQuestionIndex];
+                if (previousAnswer !== null) {
+                    const options = document.querySelectorAll('.quantum-option');
+                    if (previousAnswer === question.correct) {
+                        options[previousAnswer].classList.add('correct');
+                    } else {
+                        options[previousAnswer].classList.add('incorrect');
+                        options[question.correct].classList.add('correct');
+                    }
+                }
+
+                const options = document.querySelectorAll('.quantum-option');
+                options.forEach(option => {
+                     option.addEventListener('click', () => this.selectOption(option, question));
+                });
+            }
+
+            selectOption(selectedOption, question) {
+                const options = document.querySelectorAll('.quantum-option');
+                options.forEach(opt => opt.classList.remove('selected'));
+
+                selectedOption.classList.add('selected');
+                const selectedIndex = parseInt(selectedOption.getAttribute('data-index'));
+                this.selectedAnswers[this.currentQuestionIndex] = selectedIndex;
+
+                if (selectedIndex === question.correct) {
+                    selectedOption.classList.add('correct');
+                    this.score++;
+                } else {
+                    selectedOption.classList.add('incorrect');
+                    options[question.correct].classList.add('correct'); // Show correct answer
+                }
+
+                this.updateProgressBar();
+                this.showResult();
+
+                // Add event listener for Enter key after selecting an option
+                const enterKeyHandler = (e) => {
+                    if (e.key === 'Enter') {
+                        this.navigateQuestion(1);
+                        document.removeEventListener('keydown', enterKeyHandler);
+                    }
+                };
+                document.addEventListener('keydown', enterKeyHandler);
+            }
+
+            navigateQuestion(direction) {
+                if (this.currentQuestionIndex + direction >= 0 && this.currentQuestionIndex + direction < this.questions.length) {
+                    this.currentQuestionIndex += direction;
+                    this.loadQuestion();
+                }
+            }
+
+            showResult() {
+                this.resultContainer.innerHTML = `Score: ${this.score} out of ${this.questions.length}`;
+            }
+
+            updateProgressBar() {
+                const progressPercentage = ((this.currentQuestionIndex + 1) / this.questions.length) * 100;
+                this.progressBarFill.style.width = `${progressPercentage}%`;
+            }
+        }
+    </script>
+</body>
+</html>
